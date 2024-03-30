@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.container h1 {
+    text-align: center;
+}
+
+.add-task {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.add-task input,
+.add-task select {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todo-sections h2 {
+    text-align: center;
+}
+
+.todo-sections ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-sections li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #8b8585;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: rgb(243, 230, 213);
+}
+
+.todo-sections li.completed-item {
+    background-color: #9ef0a1;
+}
+
+.todo-sections li.past-due {
+    border-color: red;
+}
+
+.todo-sections li .task-name {
+    flex: 1;
+}
+
+.todo-sections li button {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.todo-sections li button.completed {
+    color: green;
+}
+.pointer{
+    cursor: pointer;
+}
